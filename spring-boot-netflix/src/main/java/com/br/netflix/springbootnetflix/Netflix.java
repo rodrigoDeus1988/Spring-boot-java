@@ -2,15 +2,20 @@ package com.br.netflix.springbootnetflix;
 
 import java.io.Serializable;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="netflix")
 public class Netflix implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@Id
 	private String id;
 	private String filme;
 	private String genero;
-	private String Diretor;
-	private String Duração; 
+	private String diretor;
+	private String duracao; 
 	private String classificacao;
 	private String elenco;
 	private String pais;
@@ -20,14 +25,14 @@ public class Netflix implements Serializable {
 
 	}
 
-	public Netflix(String id, String filme, String genero, String diretor, String duração, String classificacao,
+	public Netflix(String id, String filme, String genero, String diretor, String duracao, String classificacao,
 			String elenco, String pais, String distribuidora) {
 		super();
 		this.id = id;
 		this.filme = filme;
 		this.genero = genero;
-		this.Diretor = diretor;
-		this.Duração = duração;
+		this.diretor = diretor;
+		this.duracao = duracao;
 		this.classificacao = classificacao;
 		this.elenco = elenco;
 		this.pais = pais;
@@ -59,19 +64,19 @@ public class Netflix implements Serializable {
 	}
 
 	public String getDiretor() {
-		return Diretor;
+		return diretor; 
 	}
 
 	public void setDiretor(String diretor) {
-		Diretor = diretor;
+		diretor = diretor;
 	}
 
-	public String getDuração() {
-		return Duração;
-	}
+	public String getduração() {
+		return duracao;
+	} 
 
-	public void setDuração(String duração) {
-		Duração = duração;
+	public void setduração(String duracao) {
+		duracao = duracao;
 	}
 
 	public String getClassificacao() {
