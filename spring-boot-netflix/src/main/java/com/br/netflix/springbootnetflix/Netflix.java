@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="netflix")
+
 public class Netflix implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -18,7 +19,7 @@ public class Netflix implements Serializable {
 	private String duracao; 
 	private String classificacao;
 	private String elenco;
-	private String pais;
+	private String pais; 
 	private String distribuidora; 
 
 	public Netflix() {
