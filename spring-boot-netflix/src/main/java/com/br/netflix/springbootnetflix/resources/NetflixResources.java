@@ -47,6 +47,15 @@ public class NetflixResources {
  
 		return ResponseEntity.ok().body(list); 
 
+	} 
+	
+	@RequestMapping(value = "/classificacao", method = RequestMethod.GET)
+	public ResponseEntity<List<Netflix>> findByClassificacao(@RequestParam(value = "cl", defaultValue = "") String text) {
+		text = URL.decodeParam(text);
+		List<Netflix> list = service.findByClassificacao(text);   
+ 
+		return ResponseEntity.ok().body(list); 
+ 
 	}
 
 }

@@ -6,35 +6,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.br.netflix.springbootnetflix.Netflix;
+import com.br.netflix.springbootnetflix.NetflixSeries;
 import com.br.netflix.springbootnetflix.repository.NetflixRepository;
+import com.br.netflix.springbootnetflix.repository.NetflixSeriesRepository;
 
 @Service
-public class NetflixService {
+public class NetflixSeriesService {
 
 	@Autowired
-	private NetflixRepository repo;
+	private NetflixSeriesRepository repo;   
 
-	public List<Netflix> findAll() {
-		return repo.findAll();
+	public List<NetflixSeries> findAllSerie() {
+		return repo.findAll(); 
 
 	}
-
-	public List<Netflix> findByFilme(String text) {
-
-		return repo.findByFilmeIgnoreCase(text); 
-
-	} 
 	
-	public List<Netflix> findByGenero(String text) {
+	public List<NetflixSeries> findByGenero(String text) {
 
 		return repo.findByGeneroIgnoreCase(text) ;  
 
 	} 
+
 	
-	public List<Netflix> findByClassificacao(String text) {
-
-		return repo.findByClassificacaoIgnoreCase(text) ;   
-
-	} 
 
 }

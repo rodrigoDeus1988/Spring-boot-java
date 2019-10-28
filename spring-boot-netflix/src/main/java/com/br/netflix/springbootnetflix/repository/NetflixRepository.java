@@ -11,8 +11,10 @@ import com.br.netflix.springbootnetflix.dto.NetflixDTO;
 @Repository
 public interface NetflixRepository extends MongoRepository<Netflix,String>{
 	
-	List<Netflix> findByFilmeIgnoreCase(String filme); 
+List<Netflix> findByFilmeIgnoreCase(String filme); 
 	
 	List<Netflix> findByGeneroIgnoreCase(String genero); 
+	
+	List<Netflix> findByClassificacaoIgnoreCase(String classificacao); 
  
 }
