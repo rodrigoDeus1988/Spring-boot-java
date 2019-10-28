@@ -39,5 +39,14 @@ public class NetflixResources {
 		return ResponseEntity.ok().body(list);
 
 	}
+	
+	@RequestMapping(value = "/genero", method = RequestMethod.GET)
+	public ResponseEntity<List<Netflix>> findByGenero(@RequestParam(value = "nome", defaultValue = "") String text) {
+		text = URL.decodeParam(text);
+		List<Netflix> list = service.findByGenero(text);  
+ 
+		return ResponseEntity.ok().body(list); 
+
+	}
 
 }
