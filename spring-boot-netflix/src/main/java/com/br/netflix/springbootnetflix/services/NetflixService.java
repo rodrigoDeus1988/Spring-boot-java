@@ -10,12 +10,19 @@ import com.br.netflix.springbootnetflix.repository.NetflixRepository;
 
 @Service
 public class NetflixService {
- 
+
 	@Autowired
 	private NetflixRepository repo;
-	
-	public List<Netflix> findAll(){
+
+	public List<Netflix> findAll() {
 		return repo.findAll();
-		 
+
 	}
+
+	public List<Netflix> findByFilme(String text) {
+
+		return repo.findByFilmeIgnoreCase(text); 
+
+	} 
+
 }
