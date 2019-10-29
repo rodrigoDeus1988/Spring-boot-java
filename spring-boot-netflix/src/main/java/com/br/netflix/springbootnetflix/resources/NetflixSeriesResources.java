@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.br.netflix.springbootnetflix.Netflix;
 import com.br.netflix.springbootnetflix.NetflixSeries;
+import com.br.netflix.springbootnetflix.NetflixVotacao;
 import com.br.netflix.springbootnetflix.dto.NetflixDTO;
 import com.br.netflix.springbootnetflix.dto.NetflixSeriesDTO;
 import com.br.netflix.springbootnetflix.resources.util.URL;
@@ -37,9 +38,9 @@ public class NetflixSeriesResources {
 	@RequestMapping(value = "/genero", method = RequestMethod.GET)
 	public ResponseEntity<List<NetflixSeries>> findByGenero(@RequestParam(value = "gr", defaultValue = "") String text) {
 		text = URL.decodeParam(text);
-		List<NetflixSeries> list = service2.findByGenero(text); 
+		List<NetflixSeries> list = service2.findByGenero(text);  
  
-		return ResponseEntity.ok().body(list);   
+		return ResponseEntity.ok().body(list);    
 
 	}
 

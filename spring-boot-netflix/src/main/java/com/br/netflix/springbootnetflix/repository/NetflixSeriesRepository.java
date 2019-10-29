@@ -11,7 +11,7 @@ import com.br.netflix.springbootnetflix.NetflixSeries;
 @Repository
 public interface NetflixSeriesRepository extends MongoRepository<NetflixSeries,String>{
 	
-	List<NetflixSeries> findByGeneroIgnoreCase(String genero); 
+	List<NetflixSeries> findByGeneroIgnoreCase(String genero);
  
 }
  

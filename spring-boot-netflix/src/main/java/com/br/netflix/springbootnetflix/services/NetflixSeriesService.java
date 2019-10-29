@@ -23,10 +23,9 @@ public class NetflixSeriesService {
 	
 	public List<NetflixSeries> findByGenero(String text) {
 
-		return repo.findByGeneroIgnoreCase(text) ;  
+		return repo.findByGeneroIgnoreCase(text) ;   
 
-	} 
+	}  
 
 	
-
 }

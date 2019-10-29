@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.br.netflix.springbootnetflix.Netflix;
+import com.br.netflix.springbootnetflix.NetflixVotacao;
+import com.br.netflix.springbootnetflix.dto.NetflixDTO;
 import com.br.netflix.springbootnetflix.repository.NetflixRepository;
 
 @Service
@@ -36,5 +38,6 @@ public class NetflixService {
 		return repo.findByClassificacaoIgnoreCase(text) ;   
 
 	} 
+	
 
 }
