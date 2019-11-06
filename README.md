@@ -2,6 +2,6 @@
      
   ### Endpoints ###
 
-# https://netfilmes.herokuapp.com/filmes
+#https://netfilmes.herokuapp.com/filmes#
 
-# https://netfilmes.herokuapp.com/series
+#https://netfilmes.herokuapp.com/series#
