@@ -2,11 +2,11 @@
      
   ### Endpoints ###
 
-https://netfilmes.herokuapp.com/titulo?nome=cORINGA
+https://netfilmes.herokuapp.com/filmes/titulo?nome=cORINGA
 
 https://netfilmes.herokuapp.com/filmes
 
-https://netfilmes.herokuapp.com/filmes/genero?nome=Drama#
+https://netfilmes.herokuapp.com/filmes/genero?nome=Drama
 
 https://netfilmes.herokuapp.com/filmes/classificacao?cl=18
 
