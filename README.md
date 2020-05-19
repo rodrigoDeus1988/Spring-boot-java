@@ -16,5 +16,4 @@ https://netfilmes.herokuapp.com/series/genero?gr=Terror
 
 https://netfilmes.herokuapp.com/avalicao/nota?n=2
 
-### POST ###
 https://netfilmes.herokuapp.com/avalicao
